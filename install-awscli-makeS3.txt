@@ -1,0 +1,13 @@
+#For install aws-cli
+
+#After installing aws-cli after configure aws-cli
+
+sudo apt install awscli -y
+aws configure
+
+
+#Create S3 bucket
+
+aws s3 mb s3://my-log-s3-2435
+
+#Bucket name must be unique 

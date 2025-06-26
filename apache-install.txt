@@ -1,0 +1,12 @@
+#That command install apache in your server 
+
+sudo apt update
+sudo apt install apache2 -y
+sudo systemctl start apache2
+
+
+#After installing apache server we deploy static website 
+
+cd var/www/html
+sudo rm index.html
+echo "<h1>Hello from Cloud Engineer</h1>" | sudo tee index.html
